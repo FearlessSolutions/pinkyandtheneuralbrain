@@ -1,0 +1,21 @@
+<div class="chat">
+  <header><h1>Chat</h1></header>
+
+  <section class="messages">
+    <div *ngFor="let message of messages; let i = index" [ngClass]= "{
+           'sender': message.role === 'user',
+           'receiver': message.role === 'assistant',
+           'odd': i % 2 !== 0,
+           'even': i % 2 === 0
+         }">
+      <p>{{ message.content }}</p>
+    </div>
+  </section>
+
+  <section class="prompt">
+    <mat-form-field>
+      <textarea matInput [(ngModel)]="userInput" placeholder="Start typing..."></textarea>
+      <button mat-flat-button (click)="sendMessage()">Send</button>
+    </mat-form-field>
+  </section>
+</div>

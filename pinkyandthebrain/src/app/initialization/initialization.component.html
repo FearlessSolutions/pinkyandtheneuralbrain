@@ -1,0 +1,46 @@
+<div class="initialization">
+  <header>
+    <h1>Initialize Prompt</h1>
+  </header>
+  <section class="half-width">
+    <mat-form-field>
+      <textarea matInput placeholder="Start typing..." [(ngModel)]="userPrompt"></textarea>
+    </mat-form-field>
+  </section>
+  <section class="library">
+    <h2>or choose from prompt library</h2>
+    <div>
+      <p>What are the key technical features we've implemented in past projects that can be highlighted in this document?</p>
+    </div>
+    <div>
+      <p>What lessons learned from previous technical documents can we incorporate into this new capabilities overview?</p>
+    </div>
+    <div>
+      <p>What specific technologies and tools have proven effective in our previous work that should be included?</p>
+    </div>
+    <div>
+      <p>What innovative solutions from our past work can we showcase in this technical capabilities document?</p>
+    </div>
+    <div>
+      <p>What best practices from our past work can we apply to this new capabilities overview?</p>
+    </div>
+    <div>
+      <p>What potential challenges and solutions might arise in implementing these new capabilities in our current project?</p>
+    </div>
+    <div>
+      <p>What additional resources or tools can help us learn more about these new capabilities and their implementation?</p>
+    </div>
+    <div>
+      <p>What are the key stakeholder perspectives and concerns we should address when implementing these new capabilities in our current project?</p>
+    </div>
+  </section>
+  <section class="button-container">
+    <div class="btn">
+
+      <button mat-flat-button (click)="onBeginClick()">
+        <mat-icon>arrow_forward</mat-icon>
+        Begin
+      </button>
+    </div>
+  </section>
+</div>
