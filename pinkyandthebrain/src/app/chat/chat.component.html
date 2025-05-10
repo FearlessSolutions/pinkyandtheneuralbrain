@@ -10,6 +10,16 @@
          }">
       <p>{{ message.content }}</p>
     </div>
+<!-- Loading spinner -->
+  <div *ngIf="loading$ | async" class="loading-spinner-container">
+    <mat-spinner diameter="40"></mat-spinner>
+    <p>Processing your request...</p>
+  </div>
+
+  <!-- Error message display -->
+  <div *ngIf="error$ | async as error" class="error-message">
+    {{ error }}
+  </div>
   </section>
 
   <section class="prompt">

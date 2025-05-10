@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgFor } from '@angular/common';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MarkdownModule } from 'ngx-markdown';
 import { CommonModule } from '@angular/common';
 import { ChatService, ChatMessage } from '../chat.service';
@@ -16,6 +17,7 @@ import { Observable } from 'rxjs';
   imports: [
     CommonModule,
     MarkdownModule,
+    MatProgressSpinnerModule,
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
